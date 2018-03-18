@@ -544,4 +544,192 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
  </addon>
 
+<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="2.5.10">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0" />
+  </requires>
+  <extension library="default.py" point="xbmc.service" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Common caching api for xbmc plugins.</summary>
+  </extension>
+  <extension library="lib" point="xbmc.python.module" />
+</addon>
+	
+<addon id="script.genesisreborn.artwork" version="1.4.1" name="Genesis Reborn Artwork" provider-name="Jesus Box Media">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Genesis Reborn Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+	
+<addon id="script.genesisreborn.metadata" version="1.0.1" name="genesisreborn Metadata" provider-name="Genesis Reborn">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the genesisreborn Addon</summary>
+		<description>Metadata for genesisreborn are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+	
+	<addon id="script.logviewer" name="Log Viewer for Kodi" provider-name="i96751414" version="2.0.0">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension library="lib" point="xbmc.python.module"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <forum>http://forum.kodi.tv/showthread.php?tid=223490</forum>
+        <source>https://github.com/i96751414/script.logviewer</source>
+        <summary lang="en">View Kodi logfile directly on Kodi</summary>
+        <summary lang="pt">Veja o log do Kodi directamente no Kodi</summary>
+        <description lang="en">Tools to easily check and analyse Kodi log file.</description>
+        <description lang="pt">Ferramenta para verificar e ler facilmente o log do Kodi.</description>
+        <platform>all</platform>
+        <news>
+- Fix text box not opening
+- Added a custom window for reading log
+- Changed all api calls: xbmc.executebuiltin("RunScript(script.logviewer, show_log)")
+- Added service for monitoring errors
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <screenshot>resources/images/screenshot-1.png</screenshot>
+            <screenshot>resources/images/screenshot-2.png</screenshot>
+            <screenshot>resources/images/screenshot-3.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+	
+<addon id="script.logviewer" name="Log Viewer for Kodi" provider-name="i96751414" version="2.0.0">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension library="lib" point="xbmc.python.module"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <forum>http://forum.kodi.tv/showthread.php?tid=223490</forum>
+        <source>https://github.com/i96751414/script.logviewer</source>
+        <summary lang="en">View Kodi logfile directly on Kodi</summary>
+        <summary lang="pt">Veja o log do Kodi directamente no Kodi</summary>
+        <description lang="en">Tools to easily check and analyse Kodi log file.</description>
+        <description lang="pt">Ferramenta para verificar e ler facilmente o log do Kodi.</description>
+        <platform>all</platform>
+        <news>
+- Fix text box not opening
+- Added a custom window for reading log
+- Changed all api calls: xbmc.executebuiltin("RunScript(script.logviewer, show_log)")
+- Added service for monitoring errors
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <screenshot>resources/images/screenshot-1.png</screenshot>
+            <screenshot>resources/images/screenshot-2.png</screenshot>
+            <screenshot>resources/images/screenshot-3.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+	
+<addon id="script.module.addon.common" 
+	     name="Common addon methods" 
+	     version="2.0.1" 
+	     provider-name="Eldorado (original: t0mm0)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Collection of commonly used addon routines</summary>
+    <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>  
+  </extension>
+</addon>
+	
+<addon id="script.module.arrow"
+       name="arrow"
+       version="0.10.0"
+       provider-name="crsmithdev, Razzeee">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.dateutil" version="2.4.2"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Arrow: better dates and times for Python</summary>
+    <description>Packed for Kodi from https://github.com/crsmithdev/arrow</description>
+    <platform>all</platform>
+    <language></language>
+    <license>Apache2</license>
+    <forum></forum>
+    <website>http://crsmithdev.com/arrow/</website>
+    <source>https://github.com/Razzeee/script.module.arrow</source>
+    <email>beenje AT gmail.com</email>
+  </extension>
+</addon>
+	
+<addon id="script.module.beautifulsoup"
+       name="BeautifulSoup"
+       version="3.2.1"
+       provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python" 
+    		version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.beautifulsoup4"
+       name="BeautifulSoup4"
+       version="4.5.3"
+       provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python" 
+             version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+    <website>http://www.crummy.com/software/BeautifulSoup/</website>
+  </extension>
+</addon>
+	
 </addons>
